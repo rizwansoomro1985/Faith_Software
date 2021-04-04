@@ -1,0 +1,27 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+
+
+{% block content %}
+
+<div class="container">
+    <div class="header-bar">
+        <h1>Chart Of Accounts</h1>
+    </div>
+    <div class=''>
+        {% for customer in customers %}
+        <div class="customer-wrapper">
+            <div class="customer-title">
+                {{customer.name}}
+                <a class='btn btn-outline-primary' href="{% url 'customer-detail' customer.id %}">View</a>
+                <a class='btn btn-outline-info' href="{% url 'customer-update' customer.id %}">Edit</a>
+            </div>
+        </div>
+        {% endfor %}
+        <a class="btn btn-lg btn-primary " href="{% url 'create-customer' %}">Create New Client</a>
+    </div>
+</div>
+<link rel="stylesheet" href="{% static 'css/customers.css' %}">
+{% endblock content %}

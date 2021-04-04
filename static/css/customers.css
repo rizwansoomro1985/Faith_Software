@@ -1,0 +1,40 @@
+.container {
+    max-width: 700px;
+    margin: auto;
+    background-color: #FFF;
+    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 3);
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 3);
+
+}
+
+
+
+.header-bar h1 {
+    margin: auto;
+}
+
+customer-card {
+    max-width: 500px;
+    margin: auto;
+    background: #FFF;
+
+    border-radius: 5px 5px 5px 5px;
+    font-size: large;
+}
+
+
+.customer-wrapper {
+    display: inline;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #fff;
+    border-top: 1px solid rgb(226, 226, 226);
+
+}
+
+.customer-title {
+    font-size: larger;
+    justify-content: space-between;
+    margin: 10px;
+}

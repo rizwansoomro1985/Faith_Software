@@ -1,0 +1,17 @@
+{% extends 'main/base.html' %}
+{% block title %}Faith Associates{% endblock title %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md">
+            <h1>Faith Associates</h1>
+        </div>
+
+        <div class="col-md">
+            <h2>Hello {{request.user}}</h2>
+        </div>
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,52 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/customer-detail.css' %}">
+
+
+<div class="row">
+    <div class="col-md">
+        <div class="card card-body customer-card">
+            <h3 style='margin: auto;'>Client Details</h3>
+            <hr>
+            <h4>{{customer.name}}</h4>
+            <p><b>Email:</b> {{customer.email}}</p>
+            <p>Phone: {{customer.phone}}</p>
+            <p>Address: {{customer.Address}}</p>
+            <br><br>
+            <a class='btn btn-outline-info btn-sm btn-block' href="{% url 'customer-update' customer.id %}">Edit Client</a>
+            <a class='btn btn-outline-danger btn-sm btn-block' href="{% url 'customer-delete' customer.id %}">Delete Client</a>
+        </div>
+    </div>
+
+        <div class="col-md">
+        <div class="card card-body customer-card">
+            <h3 style='margin: auto;'>Client Details</h3>
+            <hr>
+            <h4>{{customer.name}}</h4>
+            <p><b>Email:</b> {{customer.email}}</p>
+            <p>Phone: {{customer.phone}}</p>
+            <br><br>
+            <a class='btn btn-outline-info btn-sm btn-block' href="">Edit Client</a>
+            <a class='btn btn-outline-danger btn-sm btn-block' href="">Delete Client</a>
+        </div>
+    </div>
+
+        <div class="col-md">
+        <div class="card card-body customer-card">
+            <h3 style='margin: auto;'>Client Details</h3>
+            <hr>
+            <h4>{{customer.name}}</h4>
+            <p><b>Email:</b> {{customer.email}}</p>
+            <p>Phone: {{customer.phone}}</p>
+            <br><br>
+            <a class='btn btn-outline-info btn-sm btn-block' href="">Edit Client</a>
+            <a class='btn btn-outline-danger btn-sm btn-block' href="">Delete Client</a>
+        </div>
+    </div>
+
+
+</div>
+
+{% endblock content %}
